@@ -1,0 +1,22 @@
+<%= form_tag "/recipes", method: :post do %>
+  <form class="form-inline">
+    <div class="form-group">
+       <%= text_field_tag :name, nil, placeholder: "Name", class: "form-control"%>
+    </div>
+    <div class="form-group">
+       <%= text_field_tag :prep_time, nil, placeholder: "Prep Time", class: "form-control"%>
+    </div>
+    <div class="form-group">
+       <%= text_field_tag :ingredients, nil, placeholder: "Ingredients", class: "form-control"%>
+    </div>
+    <div class="form-group">
+       <%= text_field_tag :directions, nil, placeholder: "Directions", class: "form-control"%>
+    </div>
+    <div class="form-group">
+       <%= text_field_tag :image, nil, placeholder: "Image", class: "form-control"%>
+    </div>
+    <div>
+      <%= submit_tag "Submit", class:"btn btn-default"%>
+    </div>
+  </div>
+<% end %>

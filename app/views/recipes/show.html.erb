@@ -1,0 +1,14 @@
+<h2><%=@recipe.name%></h2>
+<p><%=@recipe.ingredients %></p>
+<p><%=@recipe.directions %></p>
+<p><%=@recipe.prep_time %><%=" hour"%></p>
+<a><%=@recipe.image %></a>
+
+
+<div>
+  <%= link_to "Edit Recipe", "/recipes/#{@recipe.id}/edit" %>
+</div>
+
+<div>
+  <%= link_to "Delete Recipe", "/recipes/#{@recipe.id}", method: :delete %>
+</div>
